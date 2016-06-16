@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorPrimaryDark"
+    tools:context="com.example.shinichi.ujianonline2.Register_Siswa">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/noob_regist_siswa"
+        android:textColor="@color/textColor"
+        android:textSize="30dp"
+        android:gravity="center"
+        android:layout_marginTop="30dp"
+        android:textStyle="bold"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp">
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/noob_nis"
+                    android:textColor="@color/textColor"
+                    android:textSize="20dp"
+                    android:id="@+id/txtNIS"
+                    android:layout_alignParentLeft="true"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtNIS"
+                    android:id="@+id/nis"
+                    android:textColor="@color/textColor"
+                    android:inputType="text"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/noob_password_siswa"
+                    android:textColor="@color/textColor"
+                    android:textSize="20dp"
+                    android:id="@+id/txtpassword_siswa"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/nis"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtpassword_siswa"
+                    android:id="@+id/password_siswa"
+                    android:textColor="@color/textColor"
+                    android:inputType="textPassword"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/noob_con_password_siswa"
+                    android:textColor="@color/textColor"
+                    android:textSize="20dp"
+                    android:id="@+id/txt_conpassword_siswa"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/nis"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtconpassword_siswa"
+                    android:id="@+id/con_password_siswa"
+                    android:textColor="@color/textColor"
+                    android:inputType="textPassword"/>
+
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/noob_nama_siswa"
+                    android:textColor="@color/textColor"
+                    android:textSize="20dp"
+                    android:id="@+id/txtnama_siswa"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/id"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtnama_siswa"
+                    android:id="@+id/nama"
+                    android:textColor="@color/textColor"
+                    android:inputType="text"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/noob_kelas_siswa"
+                    android:textColor="@color/textColor"
+                    android:textSize="20dp"
+                    android:id="@+id/txtkelas_siswa"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/nama"/>
+
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtkelas_siswa"
+                    android:id="@+id/kelas"
+                    android:textColor="@color/textColor"
+                    android:inputType="text"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txtTmptLhr"
+                    android:text="@string/noob_tmpt_lhr"
+                    android:textSize="20dp"
+                    android:layout_alignParentLeft="true"
+                    android:textColor="@color/textColor"
+                    android:layout_below="@id/kelas"
+                    />
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtnama_siswa"
+                    android:id="@+id/tmp_lhr"
+                    android:textColor="@color/textColor"
+                    android:inputType="text"
+                    />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/noob_jenis_kelamin_siswa"
+                    android:textColor="@color/textColor"
+                    android:textSize="20dp"
+                    android:id="@+id/txtjekel_siswa"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/tgl_lhr"/>
+
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtjekel_siswa"
+                    android:id="@+id/jenis_kelamin_siswa"
+                    android:textColor="@color/textColor"
+                    android:inputType="text"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/nice_agama_siswa"
+                    android:textColor="@color/textColor"
+                    android:textSize="20dp"
+                    android:id="@+id/txtagama_siswa"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/jenis_kelamin_siswa"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtagama_siswa"
+                    android:id="@+id/agama"
+                    android:textColor="@color/textColor"
+                    android:inputType="text"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/noob_thnMSK"
+                    android:textColor="@color/textColor"
+                    android:textSize="20dp"
+                    android:id="@+id/txtThnMsk"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/agama"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtThnMsk"
+                    android:id="@+id/ThnMsk"
+                    android:textColor="@color/textColor"
+                    android:inputType="number"/>
+
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/noob_btRegister"
+                    style="?android:textAppearanceSmall"
+                    android:textStyle="bold"
+                    android:layout_below="@+id/agama"
+                    android:layout_marginTop="70dp"
+                    android:id="@+id/btRegister_siswa"
+                    />
+
+
+            </LinearLayout>
+        </ScrollView>
+
+
+    </RelativeLayout>
+</LinearLayout>

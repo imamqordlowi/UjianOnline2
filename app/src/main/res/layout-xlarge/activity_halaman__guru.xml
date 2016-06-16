@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context="com.example.shinichi.ujianonline2.Halaman_Guru">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name_Halaman_guru"
+        android:textColor="@color/textColor"
+        android:textSize="25dp"
+        android:gravity="center"
+        android:id="@+id/halaman_guru"
+        android:layout_marginTop="15dp"
+        android:textStyle="bold"/>
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:id="@+id/btninformasiSiswa"
+                style="@android:style/Widget.ImageButton"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:drawableTop="@drawable/bookmark_folder"
+                android:text="Input Soal Harian" />
+
+            <Button
+                android:id="@+id/btnregistrasi"
+                style="@android:style/Widget.Button"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:drawableTop="@drawable/bookmark_folder"
+                android:text="Input Soal UAS" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:id="@+id/btnInformasiNilai"
+                style="@android:style/Widget.ImageButton"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:drawableTop="@drawable/emblem_library"
+                android:text="Informasi Nilai" />
+
+            <Button
+                android:id="@+id/btnJadwal"
+                style="@android:style/Widget.ImageButton"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:drawableTop="@drawable/office_calendar"
+                android:text="Jadwal Ujian" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:id="@+id/btnLogout"
+                style="@android:style/Widget.ImageButton"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:drawableTop="@drawable/application_exit"
+                android:text="Logout" />
+
+            <Button
+                android:id="@+id/btninputsoal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="37dp"
+                android:layout_toRightOf="@+id/btnLogout"
+                android:text="Button" />
+
+        </RelativeLayout>
+
+
+</TableLayout>

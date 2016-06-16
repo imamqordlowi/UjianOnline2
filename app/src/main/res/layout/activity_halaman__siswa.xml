@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    android:orientation="vertical"
+    tools:context="com.example.shinichi.ujianonline2.Halaman_Siswa">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name_Halaman_siswa"
+        android:textColor="@color/textColor"
+        android:textSize="25dp"
+        android:gravity="center"
+        android:id="@+id/halaman_Siswa"
+        android:layout_marginTop="15dp"
+        android:textStyle="bold"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/btHarian"
+            style="@android:style/Widget.ImageButton"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:drawableTop="@drawable/bookmark_folder"
+            android:text="Mengerjakan Ujian Harian" />
+
+        <Button
+            android:id="@+id/btUAS"
+            style="@android:style/Widget.Button"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:drawableTop="@drawable/bookmark_folder"
+            android:text="Mengerjakan Ujian UAS" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+
+
+        <Button
+            android:id="@+id/btnLogoutS"
+            style="@android:style/Widget.ImageButton"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/application_exit"
+            android:text="Logout" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+
+
+
+
+    </RelativeLayout>
+
+
+</TableLayout>

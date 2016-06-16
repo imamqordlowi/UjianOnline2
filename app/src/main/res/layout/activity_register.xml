@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorPrimary"
+    tools:context="com.example.shinichi.ujianonline2.Register">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/noob_regist"
+        android:textColor="@color/textColor"
+        android:textSize="30dp"
+        android:gravity="center"
+        android:layout_marginTop="30dp"
+        android:textStyle="bold"/>
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="50dp"
+    android:layout_marginLeft="25dp"
+    android:layout_marginRight="25dp">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/noob_nip"
+            android:textColor="@color/textColor"
+            android:textSize="20dp"
+            android:id="@+id/txtNIP"
+            android:layout_alignParentLeft="true"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtNIP"
+            android:id="@+id/nip"
+            android:textColor="@color/textColor"
+            android:inputType="text"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/noob_password"
+            android:textColor="@color/textColor"
+            android:textSize="20dp"
+            android:id="@+id/txtpassword"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/nip"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtpassword"
+            android:id="@+id/password"
+            android:textColor="@color/textColor"
+            android:inputType="textPassword"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/noob__con_password"
+            android:textColor="@color/textColor"
+            android:textSize="20dp"
+            android:id="@+id/txtpassword2"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/nip"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtpassword2"
+            android:id="@+id/con_password"
+            android:textColor="@color/textColor"
+            android:inputType="textPassword"/>
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/noob_nama"
+            android:textColor="@color/textColor"
+            android:textSize="20dp"
+            android:id="@+id/txtnama"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/id"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtnama"
+            android:id="@+id/nama"
+            android:textColor="@color/textColor"
+            android:inputType="text"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/noob_jenis_kelamin"
+            android:textColor="@color/textColor"
+            android:textSize="20dp"
+            android:id="@+id/txtjekel"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/nama"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtjekel"
+            android:id="@+id/jenis_kelamin"
+            android:textColor="@color/textColor"
+            android:inputType="text"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/nice_agama"
+            android:textColor="@color/textColor"
+            android:textSize="20dp"
+            android:id="@+id/txtagama"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/jenis_kelamin"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtagama"
+            android:id="@+id/agama"
+            android:textColor="@color/textColor"
+            android:inputType="text"/>
+
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/noob_btRegister"
+            style="?android:textAppearanceSmall"
+            android:textStyle="bold"
+            android:layout_below="@+id/agama"
+            android:layout_marginTop="70dp"
+            android:id="@+id/btRegister"
+            />
+
+
+    </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>
+</LinearLayout>

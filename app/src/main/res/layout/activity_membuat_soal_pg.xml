@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorPrimary"
+    tools:context="com.example.shinichi.ujianonline2.membuat_soal_pg">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/noob_judulsoal"
+        android:textColor="@color/textColor"
+        android:textSize="30dp"
+        android:gravity="center"
+        android:layout_marginTop="30dp"
+        android:textStyle="bold"
+        android:id="@+id/textView" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:id="@+id/relativeLayout">
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/noob_idgroupsoalpg"
+        android:textColor="@color/textColor"
+        android:textSize="20dp"
+        android:id="@+id/txtigp"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="56dp" />
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtigp"
+        android:id="@+id/idgroup"
+        android:textColor="@color/textColor"
+        android:inputType="text"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/noob_nomorsoal"
+        android:textColor="@color/textColor"
+        android:textSize="20dp"
+        android:id="@+id/txtnosoal"
+        android:layout_below="@+id/idgroup"
+        android:layout_centerHorizontal="true"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtnosoal"
+        android:id="@+id/nosoal"
+        android:inputType="number"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/noob_soal"
+        android:textColor="@color/textColor"
+        android:textSize="20dp"
+        android:id="@+id/txtsoal"
+        android:layout_below="@+id/nosoal"
+        android:layout_centerHorizontal="true"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtsoal"
+        android:id="@+id/soal"
+        android:inputType="textMultiLine"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/noob_opsiA"
+        android:textColor="@color/textColor"
+        android:textSize="20dp"
+        android:id="@+id/txtopsiA"
+        android:layout_below="@+id/soal"
+        android:layout_centerHorizontal="true"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtopsiA"
+        android:id="@+id/opsiA"
+        android:inputType="textMultiLine"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/noob_opsiB"
+        android:textColor="@color/textColor"
+        android:textSize="20dp"
+        android:id="@+id/txtopsiB"
+        android:layout_below="@+id/opsiA"
+        android:layout_centerHorizontal="true"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtopsiB"
+        android:id="@+id/opsiB"
+        android:inputType="textMultiLine"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/noob_opsiC"
+        android:textColor="@color/textColor"
+        android:textSize="20dp"
+        android:id="@+id/txtopsiC"
+        android:layout_below="@+id/opsiB"
+        android:layout_centerHorizontal="true"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtopsiC"
+        android:id="@+id/opsiC"
+        android:inputType="textMultiLine"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/noob_opsiD"
+        android:textColor="@color/textColor"
+        android:textSize="20dp"
+        android:id="@+id/txtopsiD"
+        android:layout_below="@+id/opsiC"
+        android:layout_centerHorizontal="true"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtopsiD"
+        android:id="@+id/opsiD"
+        android:inputType="textMultiLine"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/noob_opsiE"
+        android:textColor="@color/textColor"
+        android:textSize="20dp"
+        android:id="@+id/txtopsiE"
+        android:layout_below="@+id/opsiD"
+        android:layout_centerHorizontal="true"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtopsiE"
+        android:id="@+id/opsiE"
+        android:inputType="textMultiLine"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/noob_jawaban"
+                android:textColor="@color/textColor"
+                android:textSize="20dp"
+                android:id="@+id/txtjawaban"
+                android:layout_below="@+id/opsiE"
+                android:layout_centerHorizontal="true"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtjawaban"
+                android:id="@+id/jawaban"
+                android:inputType="textAutoComplete"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/noob_btnSimpan"
+                style="?android:textAppearanceSmall"
+                android:textStyle="bold"
+                android:layout_below="@+id/jawaban"
+                android:layout_marginTop="70dp"
+                android:id="@+id/btSimpan"
+                />
+
+
+
+
+
+
+
+
+
+        </LinearLayout>
+        </ScrollView>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

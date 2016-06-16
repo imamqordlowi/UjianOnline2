@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   android:background="@color/colorPrimary"
+    tools:context="com.example.shinichi.ujianonline2.login_guru"
+    android:orientation="vertical"
+    >
+
+    
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name_login_guru"
+        android:textColor="@color/textColor"
+        android:textSize="30dp"
+        android:gravity="center"
+        android:layout_marginTop="30dp"
+        android:textStyle="bold"/>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="70dp"
+    android:layout_marginLeft="25dp"
+    android:layout_marginRight="25dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/noob_nip"
+        android:textColor="@color/textColor"
+        android:textSize="20dp"
+        android:id="@+id/txtNIP"
+        android:layout_alignParentLeft="true"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtNIP"
+        android:id="@+id/nip"
+        android:textColor="@color/textColor"
+        android:inputType="text"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/noob_password"
+        android:textColor="@color/textColor"
+        android:textSize="20dp"
+        android:id="@+id/txtpassword"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/nip"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtpassword"
+        android:id="@+id/password"
+        android:textColor="@color/textColor"
+        android:inputType="textPassword"/>
+
+<Button
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="@string/noob_btlogin"
+    style="?android:textAppearanceSmall"
+    android:textStyle="bold"
+    android:layout_below="@+id/password"
+    android:layout_marginTop="70dp"
+    android:id="@+id/btLoginGuru"
+    android:onClick="login_guru"
+
+    />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="50dp">
+
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="@string/noob_sign_up"
+    android:textColor="@color/textColor"
+    android:textSize="18dp"
+    android:gravity="center"
+    android:layout_alignParentBottom="true"
+    android:id="@+id/register"/>
+
+
+
+    </RelativeLayout>
+</RelativeLayout>
+    </LinearLayout>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    android:orientation="vertical"
+    tools:context="com.example.shinichi.ujianonline2.pilih_soal">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/noob_pilih_soal"
+        android:textColor="@color/textColor"
+        android:textSize="30dp"
+        android:gravity="center"
+        android:layout_marginTop="30dp"
+        android:textStyle="bold"/>
+
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/textColor"
+        android:textSize="30dp"
+        android:gravity="center"
+        android:layout_marginTop="30dp"
+        android:textStyle="bold"/>
+
+
+
+
+
+     <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/noob_kelas_siswa"
+        android:textColor="@color/textColor"
+        android:textSize="20dp"
+        android:id="@+id/txtkelas_siswa"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/nama"/>
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtkelas_siswa"
+        android:id="@+id/kelas"
+        android:textColor="@color/textColor"
+        android:inputType="text"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/noob_Midgs"
+        android:textColor="@color/textColor"
+        android:textSize="20dp"
+        android:id="@+id/txtGroupSoal"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/nama"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtGroupSoal"
+        android:id="@+id/GroupSoal"
+        android:textColor="@color/textColor"
+        android:inputType="text"/>
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/noob_btMasuk"
+        style="?android:textAppearanceSmall"
+        android:textStyle="bold"
+        android:layout_marginTop="70dp"
+        android:id="@+id/btMsK"
+        />
+
+
+
+</LinearLayout>

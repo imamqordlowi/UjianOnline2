@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    android:orientation="vertical"
+    tools:context="com.example.shinichi.ujianonline2.login_siswa">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name_siswa"
+        android:textColor="@color/textColor"
+        android:textSize="30dp"
+        android:gravity="center"
+        android:layout_marginTop="30dp"
+        android:textStyle="bold"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/noob_nis"
+            android:textColor="@color/textColor"
+            android:textSize="20dp"
+            android:id="@+id/txtNIS"
+            android:layout_alignParentLeft="true"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtNIS"
+            android:id="@+id/nis"
+            android:textColor="@color/textColor"
+            android:inputType="text"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/noob_password_siswa"
+            android:textColor="@color/textColor"
+            android:textSize="20dp"
+            android:id="@+id/txtpassword_siswa"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/nis"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtpassword_siswa"
+            android:id="@+id/password"
+            android:textColor="@color/textColor"
+            android:inputType="textPassword"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/noob_btlogin_siswa"
+            style="?android:textAppearanceSmall"
+            android:textStyle="bold"
+            android:layout_below="@+id/password"
+            android:layout_marginTop="70dp"
+            android:id="@+id/btLoginSiswa"
+            android:onClick="loginSiswa"
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="50dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/noob_sign_up_siswa"
+                android:textColor="@color/textColor"
+                android:textSize="18dp"
+                android:gravity="center"
+                android:layout_alignParentBottom="true"
+                android:id="@+id/register_siswa"/>
+
+
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorPrimaryDark"
+    tools:context="com.example.shinichi.ujianonline2.MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/noob_pilihan"
+        android:textColor="@color/textColor"
+        android:textSize="30dp"
+        android:gravity="center"
+        android:layout_marginTop="30dp"
+        android:textStyle="bold"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Login Siswa"
+        android:id="@+id/btLoginSiswa"
+        android:background="@color/buttonColor"
+        android:drawableBottom="@drawable/login"
+        android:layout_above="@+id/btLoginGuru"
+        android:layout_alignParentLeft="true"
+        android:textColor="@color/textColor"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="62dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Informasi Nilai"
+        android:id="@+id/btInformasi"
+        android:drawableBottom="@drawable/login"
+        android:background="@color/buttonColor"
+        android:textColor="@color/textColor"
+        android:layout_marginBottom="47dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/btLoginSiswa"
+        android:layout_alignEnd="@+id/btLoginSiswa" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Login Guru"
+        android:drawableBottom="@drawable/login"
+        android:id="@+id/btLoginGuru"
+        android:background="@color/buttonColor"
+        android:textColor="@color/textColor"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/btInformasi"
+        android:layout_alignEnd="@+id/btInformasi" />
+</LinearLayout>

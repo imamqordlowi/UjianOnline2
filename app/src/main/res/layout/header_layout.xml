@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="65dp"
+    android:background="@color/colorPrimaryDark"
+    >
+    <TextView
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:text="ID Soal"
+        android:gravity="center_vertical"
+        android:textSize="20dp"
+        android:id="@+id/idgroup"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:text="NIS"
+        android:gravity="center_vertical"
+        android:textSize="20dp"
+        android:id="@+id/txtNIS"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:text="Nilai"
+        android:gravity="center_vertical"
+        android:textSize="20dp"
+        android:id="@+id/txtNilai"
+        android:textStyle="bold"/>
+
+</LinearLayout>
