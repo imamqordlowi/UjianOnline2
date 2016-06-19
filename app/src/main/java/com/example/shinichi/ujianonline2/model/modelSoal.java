@@ -55,7 +55,7 @@ public class modelSoal implements Serializable{
         return opsi_a;
     }
 
-    public void setopsi_a(String opsiA) {
+    public void setopsi_a(String opsi_a) {
         this.opsi_a = opsi_a;
     }
 

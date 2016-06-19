@@ -1,22 +1,161 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorPrimaryDark"
+    android:background="@color/colorAccent"
     android:orientation="vertical"
     tools:context="com.example.shinichi.ujianonline2.mengerjakan_ujianPG">
-    <TextView
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/noob_slmt_mgrjkn"
-        android:textColor="@color/textColor"
-        android:textSize="30dp"
-        android:gravity="center"
-        android:layout_marginTop="30dp"
-        android:textStyle="bold"/>
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:id="@+id/relativeLayout">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="SELAMAT MENGERJAKAN"
+            android:textSize="25dp"
+            android:layout_centerHorizontal="true"/>
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_alignParentBottom="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/pB"
+        android:layout_centerInParent="true"
+        android:visibility="invisible"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/lo3"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Durasi 30:00"
+            android:id="@+id/tvDurasi"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:layout_weight="2"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/lo3"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="350dp"
+            android:background="@drawable/box_line_gray"
+            android:layout_marginTop="10dp">
+            <TextView
+                android:layout_width="590dp"
+                android:layout_height="fill_parent"
+                android:text="SOAL"
+                android:layout_margin="5dp"
+                android:id="@+id/tvSoal"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/box_line_gray"
+            android:layout_marginTop="10dp"
+            android:weightSum="1">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="opsi A"
+                android:layout_margin="5dp"
+                android:id="@+id/tvOpsiA" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Opsi B"
+                android:layout_margin="5dp"
+                android:id="@+id/tvOpsiB" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Opsi C"
+                android:layout_margin="5dp"
+                android:id="@+id/tvOpsiC" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Opsi D"
+                android:layout_margin="5dp"
+                android:id="@+id/tvOpsiD" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Opsi E"
+                android:layout_margin="5dp"
+                android:id="@+id/tvOpsiE" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="188dp"
+            android:layout_height="39dp"
+            android:text="Masukan Jawaban"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/etJawaban"
+            android:hint="(a,b,c,d atau e)"
+            android:inputType="textMultiLine"/>
+
+            </LinearLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:id="@+id/loBottom"
+                android:layout_alignParentBottom="true">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Selesai"
+                        android:id="@+id/btnSubmit"
+                        android:layout_weight="1"
+                        android:background="@drawable/login_press"
+                        />
+
+                </LinearLayout>
+            </RelativeLayout>
 
 
+        </LinearLayout>
+        </ScrollView>
 
-
-</LinearLayout>
+</RelativeLayout>
+</RelativeLayout>

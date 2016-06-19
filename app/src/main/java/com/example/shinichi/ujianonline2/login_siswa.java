@@ -47,10 +47,10 @@ TextView RegisterSiswa;
             AlertDialog alertDialog = builder.create();
             alertDialog.show();
         }
-//        String nis = NIS.getText().toString();
-//        String password = Password.getText().toString();
-        String nis = "1234566";
-        String password = "1234566";
+        String nis = NIS.getText().toString();
+        String password = Password.getText().toString();
+//        String nis = "1234566";
+//        String password = "1234566";
         String type = "login_siswa";
         backLoginSiswa backLoginSiswa = new backLoginSiswa(this);
         backLoginSiswa.execute(type, nis, password);

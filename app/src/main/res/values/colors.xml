@@ -6,4 +6,16 @@
     <color name="colorAccent">#03fc77</color>
     <color name="textColor">#ffffff</color>
     <color name="buttonColor">#06d1ec</color>
+    <color name="background">#89C8FD</color>
+    <color name="background_dark">#2196F3</color>
+    <color name="blue_dark">#262673</color>
+    <color name="white_color">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="blue_color">#1976d2</color>
+    <color name="WhiteColor">#FFFFFF</color>
+    <color name="FontHint">#eeeeee</color>
+    <color name="FontBlack">#000000</color>
+    <color name="DarkGrey">#424242</color>
+    <color name="blue">#00abea</color>
+    <color name="white">#ffffff</color>
 </resources>
